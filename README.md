@@ -1,2 +1,2 @@
 # learningJavaScript
-Workspace for notes and practicing JS development
+Personal workspace for taking notes and practicing JS development
