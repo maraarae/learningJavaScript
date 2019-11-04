@@ -1,0 +1,46 @@
+//review
+//array = [];
+//object = {};
+//great for lists
+//untyped
+
+//practice
+
+var baseballTeams = ['Dodgers', 'Giants', 'Mets', 'Yankees', ' Astros'];
+
+//challenge
+//add a value to the end of the array
+//turn 'Giants' into a different team
+//access the 'Dodgers' value and save it to variable myFavoriteTeam
+//access the length of the array
+
+//possible solution
+//baseballTeams[6] = 'Cardinals';
+//array index starts at 0 so Astros is actually index 4 not 5
+
+baseballTeams[5] = 'Cardinals';
+
+baseballTeams[6] = 'Blue Jays';
+
+//baseballTeams
+//["Dodgers", "Giants", "Mets", "Yankees", "Astros", "Cardinals", "Blue Jays"]
+
+baseballTeams[1] = 'Angels';
+
+baseballTeams[2] = 'Phillies';
+
+//baseballTeams
+//["Dodgers", "Angels", "Phillies", "Yankees", "Astros", "Cardinals", "Blue Jays"]
+
+//baseballTeams[0];
+//"Dodgers"
+
+var myFavoriteTeam = baseballTeams[0];
+
+//myFavoriteTeam
+//"Dodgers"
+
+var californiaBaseball = baseballTeams[1];
+
+//californiaBaseball
+//"Angels"

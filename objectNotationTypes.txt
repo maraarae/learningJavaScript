@@ -1,0 +1,54 @@
+// Build a person using Object Literal Notation
+// with three property values consisting of a
+// string, a number and a boolean, using:
+//
+//      var object = {
+//           property: value,
+//           property: value,
+//           property: value,
+//      };
+//
+var humanBeing = {
+     hungry: true,
+     age: 25,
+     height:'5\'10"'
+};
+
+// Build a pizza using Dot Notation with four
+// properties and values using:
+//
+//      var object = {};
+//      object.property = value;
+//      object.property = value;
+//      object.property = value;
+//      object.property = value;
+//
+var pizza = {};
+pizza.crust = 'wheat';
+pizza.sauce = 'marinara';
+pizza.cheese = 'mozzarella';
+pizza.toppings = 'cheese, pepperoni, olives, mushrooms';
+
+// Build a cup using Bracket Notation with
+// three properties and values consisting
+// of a boolean, a string, and a number
+// using:
+//      var object = {};
+//      object['property'] = value;
+//      object['property'] = value;
+//      object['property'] = value; 
+//
+var cup = {};
+cup['insulated'] =  true;
+cup['liquid'] = 'water';
+cup['oz'] = 16;
+
+// Report the properties and values of each object
+//
+console.log('Details about each of the three Objects are listed below.');
+console.log('Person:');
+console.log(humanBeing);
+console.log('Pizza:');
+console.log(pizza);
+console.log('Cup:');
+console.log(cup);

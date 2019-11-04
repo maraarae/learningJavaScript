@@ -1,0 +1,71 @@
+//review
+//object contructor notation
+//regular function with new key word
+//create many objects
+
+//practice
+
+var home = {
+  rooms: 4,
+  apartment: false,
+  color: 'brown',
+  swimmingPool: true,
+  state: 'WA',
+  city: 'Seattle'
+}
+
+var home2 = {
+  rooms: 2,
+  apartment: true,
+  color: 'white',
+  swimmingPool: false,
+  state: 'CA',
+  city: 'Sacramento'
+}
+
+function Home(rooms, apartment, color, swimmingPool, state, city) {
+  this.rooms = rooms;
+  this.apartment = apartment;
+  this.color =  color;
+  this.swimmingPool = swimmingPool;
+  this.state = state;
+  this.city = city; 
+}
+
+var home1 = new Home(3, false, 'blue', true, 'GA', 'Atlanta');
+
+//challenge
+//build 3 more homes
+
+//possible solutions
+
+home2 = new Home(2, true, 'brown', true, 'OH', 'Cincinnati');
+
+home3 = new Home(3, false, 'red', true, 'OH', 'Cleveland');
+
+home4 = new Home(4, false, 'blue', false, 'FL', 'Miami');
+
+//challenge
+//create book with object literal notation
+//create library with object constructor function
+//create 5 instances of book
+
+//possible solutions
+
+var book = {
+  author: 'Victor Hugo',
+  title: 'Les Miserables',
+  pages: 1200
+};
+
+function Book(author, title, pages) {
+  this.author = author,
+  this.title = title,
+  this.pages = pages,
+}
+
+var book1 = new Book('Charles Dickenson', 'Tale of Two Cities', 567);
+var book2 = new Book('David Flanigan', 'Definitive JavaScript', 857);
+var book3 = new Book('Mary Shelley', 'Frankenstein', 454);
+var book4 = new Book('Neal Stephenson', 'The Diamond Age', 969);
+var book5 = new Book('Kim Stanley Robinson', 'Antarctica', 412);

@@ -1,0 +1,118 @@
+//review
+//methods for arrays
+//pop (deletes last value in array)
+//push (adds values to end of array)
+//shift (deletes first value in array)
+//unshift (adds values to the beginning of array)
+//concat (joins two arrays together)
+//reverse (switches order of array)
+//sort (sorts order of items of array in ascending or descending alphabetical or numerical order)
+//slice (uses two arguments to select starting item and ending item of array to be returned, and negative index values as arguments select items starting from end of array; single argument selects starting point in array and returns everything that comes after it -- returned items are not deleted from array)
+
+//practice
+
+var shoppingList = ['Apples', 'Pizza', 'Chicken', 'Mushrooms', 'Oranges', 'Beef'];
+
+//challenge
+//insert 'Crackers' at the front of the array and 'Grapes' at the end of the array
+
+shoppingList.unshift('Crackers');
+
+shoppingList.push('Grapes');
+
+shoppingList.push('Sriracha', 'Popcorn');
+
+shoppingList.unshift('Lemonade', 'Orange Juice');
+
+//shoppingList;
+//["Lemonade", "Orange Juice", "Crackers", "Apples", "Pizza", "Chicken", "Mushrooms", "Oranges", "Beef", "Grapes", "Sriracha", "Popcorn"]
+
+//challenge
+//remove an item from the front and the end of the shoppingList array
+
+shoppingList.pop();
+
+shoppingList.shift();
+
+//shoppingList;
+//["Orange Juice", "Crackers", "Apples", "Pizza", "Chicken", "Mushrooms", "Oranges", "Beef", "Grapes", "Sriracha"]
+
+//practice
+//capture shift and pop methods
+
+var firstItemSarah = shoppingList.shift();
+var lastItemPhil = shippingList.pop();
+
+//firstItemSarah;
+//"Orange Juice"
+//lastItemPhil;
+//"Sriracha"
+//shippingList;
+//"Crackers", "Apples", "Pizza", "Chicken", "Mushrooms", "Oranges", "Beef", "Grapes"]
+
+//practice
+
+var colors = ['Red', 'Orange', 'Yellow', 'Green', 'Blue', 'Indigo', 'Violet'];
+
+//challenge
+//build another array and add the two two together
+
+var colors2 = ['Black', White', 'Brown', 'Purple'];
+
+var allColors = colors.concat(colors2);
+
+//allColors;
+//["Red", "Orange", "Yellow", "Green", "Blue", "Indigo", "Violet", "Black", "White", "Brown", "Purple"]
+
+//challenge
+//add another array and use the concat method in two ways to add them together
+
+var colors3 = ['Red', 'White', 'Blue'];
+
+var moreAllColors = colors.concat(colors2, colors3);
+
+//moreAllColors;
+//["Red", "Orange", "Yellow", "Green", "Blue", "Indigo", "Violet", "Black", "White", "Brown", "Purple", "Red", "White", "Blue"]
+
+//challenge
+//reverse all the elements in the allColors array
+//sort all the elements in the allColors array by alphabetical order
+
+var reverseColors = allColors.reverse();
+
+var alphaColors = allColors.sort();
+
+//reverseColors;
+//["Purple", "Brown", "White", "Black", "Violet", "Indigo", "Blue", "Green", "Yellow", "Orange", "Red"]
+//alphaColors;
+//["Black", "Blue", "Brown", "Green", "Indigo", "Orange", "Purple", "Red", "Violet", "White", "Yellow"]
+
+//practice
+
+var weather = ['Rainy', 'Cold', 'Chilly', 'Snowy', 'Cloudy', 'Hot', 'Warm', 'Humid'];
+
+//challenge
+//create var winter and fill with winter values
+//create var summer and fill with summer values
+
+var winter = weather.slice(0,5);
+
+var summer = weather.slice(5);
+
+//winter;
+//["Rainy", "Cold", "Chilly", "Snowy", "Cloudy"]
+//summer;
+//["Hot", "Warm", "Humid"]
+
+//challenge
+//create same variables using negative numbers
+//do not start counting index at 0 if using slice method with negative numbers
+
+var winter = weather.slice(-8,-3);
+
+var summer = weather.slice(-3);
+
+//winter;
+//["Rainy", "Cold", "Chilly", "Snowy", "Cloudy"]
+//summer;
+//["Hot", "Warm", "Humid"]

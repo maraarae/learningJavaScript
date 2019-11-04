@@ -1,0 +1,32 @@
+// Record that weather forecast reports today's
+// temperature will be 301 degrees Kelvin using:
+//
+//      var variableName1 = value;
+//
+var kelvinTemp = 301;
+
+// Convert temperature units from Kelvin to Celsius
+// using:
+//
+//      var variableName2 = variableName1 operator value;
+//
+var celsiusTemp = kelvinTemp - 273.15;
+
+// Convert temperature units from Celsius to
+// Fahrenheit using:
+//
+//      var variableName3 = variableName2 operator value operator value;
+//
+var fahrenheitTemp = celsiusTemp * (9/5) + 32;
+
+// Round temperature units in Fahrenheit to nearest
+// whole integer using:
+//
+//      variableName3 = Math.round(variableName3);
+//
+fahrenheitTemp = Math.round(fahrenheitTemp);
+
+// Report today's weather forecast in rounded
+// degrees Fahrenheit
+//
+console.log('Today\'s temperature is ' + fahrenheitTemp + ' degrees Fahrenheit.');
